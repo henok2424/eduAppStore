@@ -11,23 +11,18 @@ class CategoriesTableSeeder extends Seeder
      */
     public function run()
     {
-      Category::create([
-          'name' => 'Marketing'
-      ]);
-      Category::create([
-          'name' => 'Business'
-      ]);
-      Category::create([
-          'name' => 'Finance'
-      ]);
-      Category::create([
-          'name' => 'Entrepreneurship'
-      ]);
-      Category::create([
+      category::create([
           'name' => 'Science'
       ]);
-      Category::create([
-          'name' => 'Biography'
+      category::create([
+          'name' => 'Technology'
       ]);
+      category::create([
+          'name' => 'Engineering'
+      ]);
+      category::create([
+          'name' => 'Maths'
+      ]);
+
     }
 }
