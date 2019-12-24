@@ -20,8 +20,7 @@ class CreateAppsTable extends Migration
             $table->string('Description');
             $table->string('image')->nullable();
             $table->unsignedInteger('category_id');
-            // $table->foreign('category_id')->references('id')->on('categories')->onUpdate('cascade');
-
+            $table->foreign('category_id')->references('id')->on('categories')->onUpdate('cascade');  
             $table->timestamps();
         });
     }

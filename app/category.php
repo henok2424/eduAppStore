@@ -9,7 +9,8 @@ class category extends Model
     protected $guarded = [];
 
     public function apps(){
-      
-      return $this->hasMany(App::class)
+
+      // return $this->hasMany(App::class)
     }
+
 }
